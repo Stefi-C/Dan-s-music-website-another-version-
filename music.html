@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Verze's Web Page/MUsic-LIst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="img-logo">
+            
+            <a href="index.html"><img src="/Assets/logo.jpeg" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOMEPAGE</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="video.html">VIDEOS</a></li>
+                <li><a href="photos.html">PHOTOS</a></li>
+                <li><a href="news&interview.html">NEWS&Interview</a></li>
+                <li><a href="store.html">STORE</a></li>
+            </ul>
+        </div>
+        <button id="buy-button">
+            BUY TICKET
+        </button>
+    </nav> 
+    <div class="banner-music">
+        <div class="title-music">
+            <h2>All Songs</h2>
+        </div> 
+         <div class="mplayer-container">
+
+         
+        <div class="main">
+            <div class="top-bar">
+                <button onclick="sidebar()"><i class="fa-solid fa-chevron-right"></i></button>
+                <div class="options">
+                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button><i class="fas fa-volume-low"></i></button>
+                    <button><i class="fa-solid fa-download"></i></button>
+                </div>
+                <button onclick="open_p()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="playing-part">
+                <div class="img">
+                    <img src="/Assets/DanBack.jpg" alt="img">
+                </div>
+            </div>
+            <div class="control-part">
+                <div class="song-title">
+                    <p>song Title</p>
+                    <p>artist name</p>
+        
+                </div>
+                <div class="player-progress-container">
+                            <div class="player-progress"></div>
+                        </div>
+                <div class="control-buttons">
+                    <div class="range-slider">
+                        
+                        <input type="range" min="0" max="100" id="slider" value="0">
+                        <p>3:00</p>
+                    </div>
+                    <div class="main-btns">
+                        <button id="previous"><i class="fas fa-backward"></i></button>
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button id="previous"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="p-song">
+                    <p id="p-title">Mama bald sind wir reich</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song .active-song">
+                    <p id="p-title">Djanni</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                    
+                   
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Heißer als lava</p>
+                    <p id="p-artist">ft Leo Peru</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                    <audio id="audio" src="/music/Heißer als Lava (ft. Leo Peru).m4a"></audio>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Vibes</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Broke aber gut Aussehend</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Fakeshit</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Super Eule KickerPionier</p>
+                    <p id="p-artist">ft Stego</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Rotes Kleid</p>
+                    <p id="p-artist"></p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">Diese Zeiten Sind Vorbei</p>
+                    <p id="p-artist">ft CYYRO</p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+                <div class="p-song">
+                    <p id="p-title">HonigKuchenPferd</p>
+                    <p id="p-artist"></p>
+                    <div class="psong-btns">
+                        <button id="play-btn"><i class="fas fa-play"></i></button>
+                        <button><i class="fa-solid fa-download"></i></button>  
+                    </div>
+                </div>
+            </div>
+        </div>
+         </div>
+    </div>
+   <script>
+        let playlist = document.querySelector('.playlist');
+        let options = document.querySelector('.options');
+
+        function open_p(){
+            playlist.classList.toggle('active');
+        }
+
+        function sidebar(){
+            options.classList.toggle('active2');
+        }
+        
+        let playBtn = document.querySelectorAll('#play-btn');
+        let audio = document.querySelector('#audio');
+
+   </script>
+</body>
+</html>
